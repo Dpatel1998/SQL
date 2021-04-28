@@ -1,0 +1,12 @@
+1.SELECT COUNT(*) FROM city WHERE CountryCode = "USA";
+2.SELECT Population, LifeExpectancy FROM country WHERE name = "Argentina";
+3.SELECT Name, LifeExpectancy FROM country WHERE LifeExpectancy IS NOT NULL ORDER BY LifeExpectancy DESC LIMIT 1
+4.
+5.
+6.SELECT * FROM city WHERE name LIKE "F%" LIMIT 25;
+7.SELECT COUNT(Name) FROM city Where CountryCode = 'CHN';
+8.SELECT Name FROM country Where Population!=(SELECT MIN(Population) FROM country) Limit 1;
+9.SELECT COUNT(DISTINCT Name) FROM country;
+10.SELECT name, SurfaceArea FROM country ORDER BY SurfaceArea DESC LIMIT 10;
+11.SELECT Name, Population FROM city WHERE CountryCode='JPN' ORDER BY Population DESC LIMIT 5;
+12.SELECT Name, Code FROM country WHERE HeadOfState='Elizabeth II';
